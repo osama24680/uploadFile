@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop File Upload</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>STM32 FOTA</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <div class="upload-area" id="uploadArea">
+          <p>Drag &amp; Drop Hex File here</p>
+          <p>or</p>
+
+          <!-- <label for="fileInput" class="file-label">Click to upload</label> -->
+          <input
+            type="file"
+            id="fileUploaded"
+            name="fileUploaded"
+            class="file-inputType"
+            accept=".hex"
+          />
+        </div>
+        <input type="submit" value="Submit" class="file-label-submit" />
+      </form>
+      <div class="file-list" id="fileList"></div>
+    </div>
+  </body>
+</html>
